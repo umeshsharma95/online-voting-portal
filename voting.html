@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voting Portal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container">
+                <a href="#" class="navbar-brand">Online Voting Portal</a>
+                <div class="d-flex justify-content-end text-white">
+                    <a id='voter' href="#" class="nav-link text-white">Hi Umesh</a>
+                    <a href="./index.html" class="btn btn-light">Logout</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div id="voting__alert" class="alert alert-success mt-5 text-center text-success" role="alert">
+               Success! Your Vote Successfully Submitted.
+            </div>
+            <div id="voting__option" class="text-center row justify-content-center mt-5">
+                <div>
+                    <h3>Choose Your Party</h3>
+                </div>
+                <div id="party__list" class="border-bottom-0 border mt-5 p-0" style="width: 300px;">
+                    <!-- <div class="form-check border-bottom p-3">
+                        <input class="form-check-input ms-2" type="radio" name="radio" id="jdu">
+                        <label class="form-check-label" for="jdu">
+                            JDU
+                        </label>
+                    </div>    -->
+                </div>
+                <div>
+                    <button id="vote" class="btn btn-success mt-3" type="button">Vote</button>
+                </div>
+            </div>
+           
+        </div>
+    </div>
+    <script src="./voting.js"></script>
+</body>
+
+</html>
